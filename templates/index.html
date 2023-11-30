@@ -1,0 +1,190 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Chatbot Sentiment Analysis</h1>
+    <form action="/analyze_sentiment" method="post">
+        <input type="text" name="user_input" placeholder="Enter a sentence">
+        <button type="submit">Analyze Sentiment</button>
+    </form>
+    <p>User Input: {{ user_input }}</p>
+    <p>Sentiment: {{ sentiment }}</p>
+    <style>/* static/style.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        
+        form {
+            text-align: center;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        p {
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        </style>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hinglish Sentiment Analysis</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='static\styles.css') }}"> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome to our HINGLISH Sentiment Analysis</h1>
+    <form action="/analyze_sentiment" method="post">
+        <header>
+            <h2> Analysis Engine</h2>
+        </header>
+        <input type="text" name="user_input" placeholder="Enter a sentence">
+        <button type="submit">Analyze Sentiment</button>
+    </form>
+    <!-- {% if user_input %}
+        <p>User Input: {{ user_input }}</p>
+        <p>Sentiment: {{ sentiment }}</p>
+    {% endif %} -->
+    <p>User Input: {{ user_input }}</p>
+    <p>Sentiment: {{ sentiment }}</p>
+    <style>
+        /* static/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4e5067;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    color: #e4e4e4;
+}
+
+header {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    padding: 1px 20px 1px 20px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #d9d9e3;
+    border-radius: 10px 10px 0 0;
+    background:#4e5067;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+
+form {
+    text-align: left;
+    margin: 50px auto;
+    background-color: #4e5067;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 22px;
+    margin: 15px 0 15px -7px;
+    border: none;
+    font-size: 40px; 
+    border-radius: 10px;
+    font-size: 18px !important; /* Set the desired font size with !important */
+    background-color: #373a4f;
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #19c37d;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #15a66e;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Additional styles for input placeholder and button hover effect */
+input[type="text"]::placeholder {
+    color: #ccc;
+}
+
+button:hover {
+    transform: scale(1.05); /* Enlarge the button slightly on hover */
+}
+    </style>
+</body>
+
+</html>
